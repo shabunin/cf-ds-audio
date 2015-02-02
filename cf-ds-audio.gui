@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gui>
+  <properties>
+    <project>cf-ds-audio</project>
+    <designer>Vladimir Shabunin</designer>
+    <size autoposition="scale">
+      <portrait width="768" height="1024" />
+      <landscape width="1024" height="768" />
+    </size>
+    <autoposition />
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+    <devices>
+      <device name="air olga">4A2F1B9F42E35352C62D8FAD199D109C</device>
+      <device name="iPhone RS">CEE8F7C525C88686883D5AC1753D4FA0</device>
+      <device name="iPad (PAVEL)">D0E9980BE97B8326AD79BA2CBB094ED2</device>
+      <device name="iPad (Пётр) mini">1B100C5680D53AAD5617A895A6162677</device>
+      <device name="Sony Z3 Compact Vladimir">F20B70641D59DE7F92F3B2FE03AA5CDD</device>
+      <device name="iPad (Пётр)">613D1F8D3BC10B69F2BAB9AC0FE21F5E</device>
+      <device name="iPad (Maxim)">146AB92D1A81A55887711A14A5176697</device>
+      <device name="iPad (Sergey)">64AD3C4A1B18E82E89C9E2733CE66911</device>
+      <device name="iPad rs">B1DB067DBC7EB94B4749264D742025BB</device>
+      <device name="iPad Polyanka 4 - Vladimir">320260B42904155828E359208DFD1188</device>
+      <device name="iPad Polyanka 1">F7DECAC8D7C408BB1668B47E9F0E4305</device>
+      <device name="iPad Pollyanna 2">9DDACC7C4D46A74126F247099EB27C34</device>
+      <device name="iPad Polyanka 3">F077D6CFBD7DB8D52C023B884D51B11D</device>
+      <device name="iPad new 22">D782FCE451BD67813198C6EFB061CF7E</device>
+      <device name="Sony LT25i">15DCDE3D3B63FA8BE1DBE3E52848A155</device>
+      <device name="iPad Dmitriy">69E32DB061C09965437E713E269B7FB8</device>
+      <device name="iPad tommy">298F02C2C219D67FB45A344BD524A85D</device>
+    </devices>
+  </properties>
+  <themes>
+    <theme type="background" name=".portrait"><![CDATA[ background-image: url(bg_portrait.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".btn_blue_sq_lrg[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_colors\btn_blue_sq_lrg_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_blue_sq_lrg[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_colors\btn_blue_sq_lrg_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".default"><![CDATA[ color: White; font-size: 12px; font-family: 'Arial'; text-align: left; vertical-align: top; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="background" name=".landscape"><![CDATA[ background-image: url(bg_landscape.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".cfblue2_home[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_home_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_home[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_home_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".cfblue2_title_c"><![CDATA[ text-shadow: rgba(0,0,0,0.78) 1px 1px 1px; color: White; font-size: 18px; font-family: 'Futura'; text-align: center; vertical-align: middle; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="gauge" name=".cfblue2_vol[state='0']"><![CDATA[ background-image: url(vol_bar_off.png);]]></theme>
+    <theme type="gauge" name=".cfblue2_vol[state='1']"><![CDATA[ background-image: url(vol_bar_on.png);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_bare[state='0']"><![CDATA[padding: 0px 19px 0px 19px; -webkit-border-image: url(bottom_btn_bare_off.png) 0 19 0 19; text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_bare[state='1']"><![CDATA[padding: 0px 19px 0px 19px; -webkit-border-image: url(bottom_btn_bare_on.png) 0 19 0 19; text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".cfblue2_title_l"><![CDATA[ text-shadow: rgba(0,0,0,0.78) 1px 1px 1px; color: White; font-size: 18px; font-family: 'Futura'; text-align: left; vertical-align: middle; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".cfblue2_bottom_L[state='0']"><![CDATA[padding: 0px 0px 0px 8px; background-image: url(bottom_btn_L_off.png); text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_L[state='1']"><![CDATA[padding: 0px 0px 0px 8px; background-image: url(bottom_btn_L_on.png); text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_M[state='0']"><![CDATA[padding: 0px 2px 0px 2px; -webkit-border-image: url(bottom_btn_M_off.png) 0 2 0 2; text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_M[state='1']"><![CDATA[padding: 0px 2px 0px 2px; -webkit-border-image: url(bottom_btn_M_on.png) 0 2 0 2; text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_R[state='0']"><![CDATA[padding: 0px 8px 0px 0px; background-image: url(bottom_btn_R_off.png); text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_bottom_R[state='1']"><![CDATA[padding: 0px 8px 0px 0px; background-image: url(bottom_btn_R_on.png); text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: White; font-size: 18px; font-family: 'Futura'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_options[state='0']"><![CDATA[padding: 0px 2px 0px 2px; -webkit-border-image: url(btn_options_off.png) 0 2 0 2; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_options[state='1']"><![CDATA[padding: 0px 2px 0px 2px; -webkit-border-image: url(btn_options_on.png) 0 2 0 2; text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_options_left[state='0']"><![CDATA[padding: 0px 2px 0px 12px; -webkit-border-image: url(btn_options_left_off.png) 0 2 0 12; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_options_left[state='1']"><![CDATA[padding: 0px 2px 0px 12px; -webkit-border-image: url(btn_options_left_on.png) 0 2 0 12; text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_options_right[state='0']"><![CDATA[padding: 0px 12px 0px 2px; -webkit-border-image: url(btn_options_right_off.png) 0 12 0 2; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_options_right[state='1']"><![CDATA[padding: 0px 12px 0px 2px; -webkit-border-image: url(btn_options_right_on.png) 0 12 0 2; text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_back[state='0']"><![CDATA[padding: 0px 7px 0px 12px; -webkit-border-image: url(btn_back_off.png) 0 7 0 12; text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_back[state='1']"><![CDATA[padding: 0px 7px 0px 12px; -webkit-border-image: url(btn_back_on.png) 0 7 0 12; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_categories[state='0']"><![CDATA[padding: 0px 12px 0px 12px; -webkit-border-image: url(btn_categories_off.png) 0 12 0 12; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_categories[state='1']"><![CDATA[padding: 0px 12px 0px 12px; -webkit-border-image: url(btn_categories_on.png) 0 12 0 12; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".Title_L"><![CDATA[ text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 24px; font-family: 'Arial'; text-align: left; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".btn_topbar[state='0']"><![CDATA[padding: 0px 7px 0px 7px; -webkit-border-image: url(btn_topbar_off.png) 0 7 0 7; text-shadow: rgba(0,0,0,1) 1px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_topbar[state='1']"><![CDATA[padding: 0px 7px 0px 7px; -webkit-border-image: url(btn_topbar_on.png) 0 7 0 7; text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".Large_L"><![CDATA[ text-shadow: rgba(0,0,0,1) 1px -1px 1px; color: White; font-size: 34px; font-family: 'Arial'; text-align: left; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".albumTitle[state='0']"><![CDATA[padding: 0px 0px 0px 4px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: bottom; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".albumTitle[state='1']"><![CDATA[padding: 0px 0px 0px 4px; color: #189F7B; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: bottom; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".songTitle[state='0']"><![CDATA[padding: 0px 0px 0px 70px; color: White; font-size: 18px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".songTitle[state='1']"><![CDATA[padding: 0px 0px 0px 70px; color: #189F7B; font-size: 18px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_main_menu[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(main_menu_btn.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cfblue2_main_menu[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(main_menu_btn.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".playerTitle[state='0']"><![CDATA[padding: 0px 0px 0px 0px; color: White; font-size: 18px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".playerTitle[state='1']"><![CDATA[padding: 0px 0px 0px 0px; color: #189F7B; font-size: 18px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="syno-ds-audio.js" />
+    <script name="userMain.js" />
+  </scripts>
+  <page name="Startup" j="0" tags="" transition="None" subtype="None" time="0" ease="" start="1">
+    <portrait />
+    <landscape t="landscape">
+      <txt j="0" x="26" y="711" w="189" h="23" t="cfblue2_title_c" wrap="False" l="0" tags="">Volume</txt>
+      <slider j="1" d="0" x="21" y="734" w="200" h="33" min="0" max="100" decimals="0" unit="decimal" t="cfblue2_vol" sim="1" l="0" tags="">
+        <indicator state="0" offsetX="0" offsetY="1" x="0" y="0" w="0" h="0" t="">vol_bar_slider.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="1" x="0" y="0" w="0" h="0" t="">vol_bar_slider.png</indicator>
+      </slider>
+      <img x="589" y="721" w="21" h="44" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">bottom_textarea_L.png</img>
+      <img x="980" y="721" w="20" h="44" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">bottom_textarea_R.png</img>
+      <img x="610" y="721" w="370" h="44" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">bottom_textarea_M.png</img>
+      <btn j="204" x="947" y="721" w="58" h="44" t="cfblue2_bottom_bare" flip="None" sim="2" l="0" s="1" tags="" js="askRemotePlayers();">
+        <inactive s="0">
+          <img x="16" y="3" w="26" h="44">icon_arrowDown.png</img>
+        </inactive>
+        <active s="0">
+          <img x="16" y="3" w="26" h="44">icon_arrowDown.png</img>
+        </active>
+      </btn>
+      <txt j="3" x="614" y="723" w="328" h="39" t="cfblue2_title_l" wrap="False" l="0" tags="">player name</txt>
+      <btn j="0" x="263" y="720" w="91" h="44" t="cfblue2_bottom_L" flip="None" sim="1" l="0" s="1" tags="" js="audioStation.requestRemotePlayer({'method': 'control', 'action': 'prev', 'id' : audioStation.currentPlayer});">
+        <inactive s="0">
+          <img x="25" y="0" w="43" h="42">transport_prev.png</img>
+        </inactive>
+        <active s="0">
+          <img x="25" y="0" w="43" h="42">transport_prev.png</img>
+        </active>
+      </btn>
+      <btn j="205" x="354" y="720" w="101" h="44" t="cfblue2_bottom_M" flip="None" sim="0" l="0" s="0" tags="" js="playPause()">
+        <inactive s="0">
+          <img x="27" y="0" w="43" h="42">transport_play.png</img>
+        </inactive>
+        <active s="0">
+          <img x="28" y="0" w="43" h="42">transport_pause.png</img>
+        </active>
+      </btn>
+      <btn j="0" x="455" y="720" w="91" h="44" t="cfblue2_bottom_R" flip="None" sim="1" l="0" s="1" tags="" js="audioStation.requestRemotePlayer({'method': 'control', 'action': 'next', 'id' : audioStation.currentPlayer});">
+        <inactive s="0">
+          <img x="20" y="0" w="43" h="42">transport_next.png</img>
+        </inactive>
+        <active s="0">
+          <img x="20" y="0" w="43" h="42">transport_next.png</img>
+        </active>
+      </btn>
+      <img x="0" y="2" w="1024" h="54" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">img_topbar_dark.png</img>
+      <btn j="100" x="406" y="14" w="111" h="28" t="btn_categories" flip="None" sim="0" l="0" s="1" tags="" js="switchToAlbums();">
+        <inactive s="0">Album</inactive>
+        <active s="0">Album</active>
+      </btn>
+      <btn j="101" x="526" y="14" w="111" h="28" t="btn_categories" flip="None" sim="0" l="0" s="1" tags="" js="switchToArtists();">
+        <inactive s="0">Artist</inactive>
+        <active s="0">Artist</active>
+      </btn>
+      <btn j="102" x="646" y="14" w="111" h="28" t="btn_categories" flip="None" sim="0" l="0" s="1" tags="" js="switchToComposers();">
+        <inactive s="0">Composer</inactive>
+        <active s="0">Composer</active>
+      </btn>
+      <btn j="103" x="766" y="14" w="111" h="28" t="btn_categories" flip="None" sim="0" l="0" s="1" tags="" js="switchToGenres();">
+        <inactive s="0">Genre</inactive>
+        <active s="0">Genre</active>
+      </btn>
+      <txt j="0" x="27" y="7" w="360" h="41" t="Title_L" wrap="False" l="0" tags="">Audio Station</txt>
+      <btn j="0" x="886" y="14" w="111" h="28" t="btn_categories" flip="None" sim="0" l="0" s="1" tags="" js="selectCategory(join);">
+        <inactive s="0">Folder (?)</inactive>
+        <active s="0">Folder (?)</active>
+      </btn>
+      <subpage name="albumsSubpage" x="10" y="75" j="200" transition1="fade" subtype1="None" time1="0" ease1="easeInEaseOut" transition2="fade" subtype2="None" time2="0" ease2="easeInEaseOut" clickthrough="0" topmost="0" v="0" l="0" tags="" />
+      <subpage name="artistSubpage" x="10" y="75" j="201" transition1="fade" subtype1="None" time1="0" ease1="easeInEaseOut" transition2="fade" subtype2="None" time2="0" ease2="easeInEaseOut" clickthrough="0" topmost="0" v="0" l="0" tags="" />
+      <subpage name="composerSubpage" x="10" y="75" j="202" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="0" l="0" tags="" />
+      <subpage name="genreSubpage" x="10" y="75" j="203" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="0" l="0" tags="" />
+      <subpage name="playerList" x="524" y="228" j="204" transition1="fade" subtype1="None" time1="0" ease1="easeInEaseOut" transition2="fade" subtype2="None" time2="0" ease2="easeInEaseOut" clickthrough="0" topmost="1" v="0" l="0" tags="" />
+      <txt j="4" x="233" y="683" w="336" h="39" t="cfblue2_title_c" wrap="False" l="0" tags="">song title</txt>
+    </landscape>
+  </page>
+  <subpage name="tlp_albumList" w="200" h="230" clip="1">
+    <img x="199" y="0" w="150" h="150" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">Audio CD.png</img>
+    <img x="0" y="0" w="200" h="200" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">Audio CD.png</img>
+    <btn j="1" x="0" y="0" w="200" h="230" t="albumTitle" flip="None" sim="0" l="0" s="1" tags="" js="audioStation.albumListClick(list, listIndex, join)">
+      <inactive s="1">Album Name</inactive>
+      <active s="1">Album Name</active>
+    </btn>
+  </subpage>
+  <subpage name="tpl_songList" w="600" h="72" clip="1">
+    <txt j="0" x="107" y="14" w="0" h="0" t="" wrap="False" l="0" tags="">Text</txt>
+    <btn j="1" x="0" y="0" w="600" h="72" t="songTitle" flip="None" sim="0" l="0" s="1" tags="" js="audioStation.songListClick(list, listIndex, join)">
+      <inactive s="1">Song Name</inactive>
+      <active s="1">Song Name</active>
+    </btn>
+    <img x="10" y="10" w="48" h="48" j="0" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">Ear Phone.png</img>
+  </subpage>
+  <subpage name="tlp_artistList" w="200" h="230" clip="1">
+    <img x="199" y="0" w="150" h="150" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">Audio CD.png</img>
+    <img x="0" y="0" w="200" h="200" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">artist.png</img>
+    <btn j="1" x="0" y="0" w="200" h="230" t="albumTitle" flip="None" sim="0" l="0" s="1" tags="" js="audioStation.artistListClick(list, listIndex, join)">
+      <inactive s="1">Artist Name</inactive>
+      <active s="1">Artist Name</active>
+    </btn>
+  </subpage>
+  <subpage name="tpl_composerList" w="200" h="230" clip="1">
+    <img x="199" y="0" w="150" h="150" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">Audio CD.png</img>
+    <img x="0" y="0" w="200" h="200" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">artist.png</img>
+    <btn j="1" x="0" y="0" w="200" h="230" t="albumTitle" flip="None" sim="0" l="0" s="1" tags="" js="audioStation.composerListClick(list, listIndex, join)">
+      <inactive s="1">Artist Name</inactive>
+      <active s="1">Artist Name</active>
+    </btn>
+  </subpage>
+  <subpage name="tpl_genreList" w="200" h="230" clip="1">
+    <img x="199" y="0" w="150" h="150" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">Audio CD.png</img>
+    <img x="0" y="0" w="200" h="200" j="2" clickthrough="0" refresh="0" l="0" noCache="1" downloadIndicator="0" clearOnURLChange="0" tags="">genre.png</img>
+    <btn j="1" x="0" y="0" w="200" h="230" t="albumTitle" flip="None" sim="0" l="0" s="1" tags="" js="audioStation.genreListClick(list, listIndex, join)">
+      <inactive s="1">Genre Title</inactive>
+      <active s="1">Genre Title</active>
+    </btn>
+  </subpage>
+  <subpage name="tpl_playerList" w="420" h="72" clip="1">
+    <txt j="0" x="107" y="14" w="0" h="0" t="" wrap="False" l="0" tags="">Text</txt>
+    <btn j="1" x="0" y="0" w="420" h="72" t="playerTitle" flip="None" sim="1" l="0" s="1" tags="" js="audioStation.playerListClick(list, listIndex, join)">
+      <inactive s="1">Player Name</inactive>
+      <active s="1">Player Name</active>
+    </btn>
+  </subpage>
+  <subpage name="playerList" w="500" h="500" clip="1">
+    <btn j="0" x="0" y="0" w="500" h="500" t="cfblue2_main_menu" flip="None" sim="0" l="0" s="1" tags="">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="0" y="0" w="500" h="500" t="cfblue2_main_menu" flip="None" sim="0" l="0" s="1" tags="">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <list j="6" x="43" y="83" w="420" h="398" headerSub="" titleSub="" contentSub="tpl_playerList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+  </subpage>
+  <subpage name="albumsSubpage" w="1000" h="600" clip="1">
+    <list j="1" x="0" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tlp_albumList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="2" x="223" y="0" w="600" h="600" headerSub="" titleSub="" contentSub="tpl_songList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+  </subpage>
+  <subpage name="artistSubpage" w="1000" h="600" clip="1">
+    <list j="1" x="212" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tlp_albumList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="2" x="423" y="0" w="577" h="600" headerSub="" titleSub="" contentSub="tpl_songList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="3" x="0" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tlp_artistList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+  </subpage>
+  <subpage name="composerSubpage" w="1000" h="600" clip="1">
+    <list j="1" x="212" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tlp_albumList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="2" x="423" y="0" w="577" h="600" headerSub="" titleSub="" contentSub="tpl_songList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="4" x="0" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tpl_composerList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+  </subpage>
+  <subpage name="genreSubpage" w="1000" h="600" clip="1">
+    <list j="1" x="212" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tlp_albumList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="2" x="423" y="0" w="577" h="600" headerSub="" titleSub="" contentSub="tpl_songList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+    <list j="5" x="0" y="0" w="200" h="600" headerSub="" titleSub="" contentSub="tpl_genreList" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+  </subpage>
+</gui>
