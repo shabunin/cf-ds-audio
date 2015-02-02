@@ -3,12 +3,12 @@
 // Author: Vladimir Shabunin
 
 var audioStation = {
-  debug: 1,
-  ip: '192.168.1.139',
+  debug: 0,
+  ip: 'demo.synology.com',
   port: '5000',
   protocol: 'http',
   account: 'admin',
-  password: 'admin',
+  password: 'synology',
   //apiVersion: '1',
   albumList: 'l1',
   songList: 'l2',
