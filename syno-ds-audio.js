@@ -3,13 +3,13 @@
 // Author: Vladimir Shabunin
 
 var audioStation = {
-  debug: 0,
+  debug: 1,
   ip: 'demo.synology.com',
   port: '5000',
   protocol: 'http',
   account: 'admin',
   password: 'synology',
-  //apiVersion: '1',
+
   albumList: 'l1',
   songList: 'l2',
   artistList: 'l3',
@@ -219,7 +219,6 @@ var audioStation = {
     });
   },
   requestCover: function(parameters, callback) {
-    // did write this funtion while was drunk, should check at morning
     var that = this;
     this.log('ASK COVER');
     var params = {};
@@ -308,7 +307,7 @@ var audioStation = {
     });
   }, 
   // Remote player
-  requestRemotePlayer: function(parameters) {
+  requestRemotePlayer: function(parameters, callback) {
     var that = this;
     this.log('REMOTE PLAYER');
     var params = {};
@@ -325,6 +324,9 @@ var audioStation = {
       }
       if (parameters.id !== undefined) {
         params.id = parameters.id;
+      }
+      if (parameters.offset !== undefined) {
+        params.offset = parameters.offset;
       }
       if (parameters.limit !== undefined) {
         params.limit = parameters.limit;
@@ -349,7 +351,13 @@ var audioStation = {
       'params' : params
     };
     this.request(requestParams, function(status, headers, body) {
-      that.parseRemotePlayerResponse(status, headers, body);
+      if (callback !== undefined) {
+        if (typeof callback === 'function') {
+          that.parseRemotePlayerResponse(status, headers, body, callback);
+        }
+      } else {
+        that.parseRemotePlayerResponse(status, headers, body);
+      }
     });
   },
   request: function(parameters, callback) {
@@ -430,7 +438,7 @@ var audioStation = {
   parseResponse: function(status, headers, body) {
     this.log('PARSE RESPONSE: ' + body);
   },
-  parseRemotePlayerResponse: function(status, headers, body) {
+  parseRemotePlayerResponse: function(status, headers, body, callback) {
     //this.log('PARSE REMOTE PLAYER RESPONSE: ' + body);
     var remotePlayer = JSON.parse(body);
     if (remotePlayer.data !== undefined) {
@@ -468,6 +476,11 @@ var audioStation = {
           }
         }
         CF.setJoin(this.songTitleJoin, songTitle);
+      }
+    }
+    if (callback !== undefined) {
+      if (typeof callback === 'function') {
+        callback(status, headers, body);
       }
     }
   },
@@ -789,17 +802,32 @@ var audioStation = {
           'songs': playlistStr,
           'id': that.currentPlayer,
           'offset': 0,
-          'limit': items.length,
-          'updated_index': listIndex
+          'limit': 0,
+          'updated_index': -1
         };
-        that.requestRemotePlayer(parameters);
-        // it may better if we make play request by callback
-        setTimeout( function () {
-          that.requestRemotePlayer({'method': 'control', 'action': 'play', 'id' : that.currentPlayer});
-        }, 1000);        
-        setTimeout( function () {
-          that.requestRemotePlayer({'method': 'getstatus', 'id' : that.currentPlayer});
-        }, 1500);
+        // we first ask for old playlist, then get its length and send new playlist 
+        // with limit parameter equal to length of old playlist.
+        // we do this for whole replacing old playlist.
+        that.requestRemotePlayer({'method': 'getplaylist', 'id' : that.currentPlayer}, function(status, headers, body) {
+          var remotePlayer = JSON.parse(body);
+          if (remotePlayer.data !== undefined) {
+            if (remotePlayer.data.songs !== undefined) {
+              // assign limit parameter to old playlist length
+              // so it will replace whole old playlist
+              parameters.limit = remotePlayer.data.songs.length;
+              that.requestRemotePlayer(parameters, function(status, headers, body) {
+                // after sending playlist start to play song with index listIndex
+                // and update status of remote player
+                setTimeout( function () {
+                  that.requestRemotePlayer({'method': 'control', 'action': 'play', 'value' : listIndex, 'id' : that.currentPlayer});
+                }, 1000);
+                setTimeout( function () {
+                  that.requestRemotePlayer({'method': 'getstatus', 'id' : that.currentPlayer});
+                }, 1500);
+              });
+            }
+          }
+        });
       });
     }
   },
